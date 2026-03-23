@@ -1,0 +1,57 @@
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+﻿@{
+    ViewData["Title"] = "Categories";
+}
+
+<h2>Category Management</h2>
+
+@* ACTION BUTTONS *@
+<button id="loadCategory">Load All Categories</button>
+<button id="createNewBtn">Create New Category</button>
+
+<hr />
+
+
+<div id="formSection" style="display:none;">
+    <h3 id="formTitle">Create Category</h3>
+
+    <form id="categoryForm">
+        <input type="hidden" id="categoryId" />
+
+        <div>
+            <label>Name:</label>
+            <input type="text" id="name" required />
+        </div>
+
+        <div>
+            <label>Description:</label>
+            <input type="text" id="description" required />
+        </div>
+
+        <button type="submit">Save</button>
+    </form>
+</div>
+
+<hr />
+
+
+<table border="1" width="100%">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody id="categoryTableBody">
+        <!-- JS will insert rows -->
+    </tbody>
+</table>
+
+@section Scripts {
+    <script src="~/js/category.js"></script>
+}
