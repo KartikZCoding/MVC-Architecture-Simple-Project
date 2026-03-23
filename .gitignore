@@ -1,0 +1,44 @@
+## .NET / ASP.NET Core
+bin/
+obj/
+publish/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vs/
+*.rsuser
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+## NuGet
+**/packages/*
+*.nupkg
+**/[Pp]ackages/build/
+
+## Build results
+[Bb]uild[Ll]og.*
+[Bb]uildLog/
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## macOS
+.DS_Store
+
+## Rider / JetBrains
+.idea/
+
+## VS Code
+.vscode/
+
+## Application settings (uncomment if you want to keep secrets out of repo)
+# appsettings.Development.json
